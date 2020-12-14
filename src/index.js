@@ -1,55 +1,18 @@
-// class Converter {
-//   constructor(from, to) {
-//     this.from = from,
-//     this.to = to
-//   }
+import store from './store'
 
-//   calculate(one, two) {
+document.addEventListener('DOMContentLoaded', () => {
+  // const number = document.querySelector('.number')
 
-//   }
-// }
-// class Display {
-//   constructor() {
+  //* Events
+  initApp()
 
-//   }
-// }
-
-// class Http {
-//   constructor(options) {
-//     this.url = options.url
-//     this.value = ''
-//   }
-
-
-//   async getFetch() {
-//     // let value = ''
-
-//     // const promise = fetch(this.url).then((resp)=>resp.json()).then((data)=>
-//     //   data.Valute
-//     // ).catch((error)=>{
-//     //   console.log('fetchErr', error)
-//     // })
-//     // console.log(promise)
-//     const response = await fetch(this.url)
-//     const val = await response.json()
-//     console.log(val)
-
-//     // promise.then(data=>console.log(data))
-//     // return value
-//   }
-// }
-
-
-// class ValuteDB extends Kek {
-//   // constructor(options) {
-//   //   this.valute = options.valute
-//   // }
-
-//   ooo() {
-//     return this.promise.then((el) => el)
-//   }
-// }
-
+  //* Handlers
+  async function initApp() {
+    await store.init().then((res) => {
+      console.log('init', res)
+    })
+  }
+})
 
 // вызвал метод http.get и получил актуальный курс. - класс запроса (хранит)
 // ввел из какой в какую валюту. получил две переменные. - класс получения

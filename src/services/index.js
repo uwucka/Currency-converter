@@ -1,4 +1,4 @@
-import config from '../config/config'
+import config from '../config'
 
 class Api {
   constructor(options) {
@@ -8,7 +8,7 @@ class Api {
   async currency() {
     const response = await fetch(this.url)
         .then((res) => res.json())
-        .then((data) => JSON.parse(data))
+        .then((data) => data)
         .catch((err) => Promise.reject(err))
 
     return response
