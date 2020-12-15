@@ -25,7 +25,7 @@ body {
 }
 
 .converter {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 input,
@@ -34,4 +34,5 @@ select {
   padding: 10px;
   border: 1px solid #b2bec3;
   outline: none;
+  margin-top: 10px;
 }
