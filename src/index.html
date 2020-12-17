@@ -4,10 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="../src/scss/main.css">
+  <link rel="stylesheet" href="../src/style/style.css">
   <title>Converter</title>
 </head>
 <body>
+  <div class="container">
+    <p class="title">Последнее обновление: <b class="date"></b></p>
+    <div class="converter">
+    <form name="currencyControls">
+      <div class="converter__from">
+        <input type="number" id="input__from">
+        <select id="select__from"></select>
+      </div>
+
+      <div class="converter__to">
+        <input type="number" id="input__to">
+        <select id="select__to"></select>
+      </div>
+  </form>
+    </div>
+  </div>
   <script src="http://127.0.0.1:8000/index.js"></script>
 </body>
 </html>
