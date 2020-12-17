@@ -1,20 +1,16 @@
 import store from './store'
+import form from './views/form'
 
 document.addEventListener('DOMContentLoaded', () => {
-  // const number = document.querySelector('.number')
-
   //* Events
   initApp()
 
   //* Handlers
   async function initApp() {
-    await store.init().then((res) => {
-      console.log('init', res)
-    })
+    await store.init()
+
+    form.renderDate(store.date)
+    form.renderSelectFrom(store.data)
+    form.renderSelectTo(store.data)
   }
 })
-
-// вызвал метод http.get и получил актуальный курс. - класс запроса (хранит)
-// ввел из какой в какую валюту. получил две переменные. - класс получения
-// произвел конвертацию - класс конвертации
-// вывеол наэкран - класс вывода

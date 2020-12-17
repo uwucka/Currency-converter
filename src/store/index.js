@@ -3,7 +3,8 @@ import api from '../services'
 class Store {
   constructor(api) {
     this.api = api,
-    this.currency = null
+    this.date = null
+    this.data = null
   }
 
   async init() {
@@ -12,9 +13,23 @@ class Store {
     ])
 
     const [currency] = response
-    this.currency = currency
+    this.date = this.getDate(currency)
+    this.data = this.getFullData(currency)
 
     return response
+  }
+
+  getDate(currency) {
+    return currency.Date
+  }
+
+  getFullData(currency) {
+    return Object.entries(currency.Valute).map((el) => {
+      return {
+        name: el[1].Name,
+        value: el[1].Value,
+      }
+    })
   }
 }
 

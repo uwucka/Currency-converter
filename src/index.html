@@ -11,15 +11,17 @@
   <div class="container">
     <p class="title">Последнее обновление: <b class="date"></b></p>
     <div class="converter">
-    <div class="converter__from">
-      <input type="number" class="input__from">
-      <select class="select__from"></select>
-    </div>
+    <form name="currencyControls">
+      <div class="converter__from">
+        <input type="number" id="input__from">
+        <select id="select__from"></select>
+      </div>
 
-    <div class="converter__to">
-      <input type="number" class="input__to">
-      <select class="select__to"></select>
-    </div>
+      <div class="converter__to">
+        <input type="number" id="input__to">
+        <select id="select__to"></select>
+      </div>
+  </form>
     </div>
   </div>
   <script src="http://127.0.0.1:8000/index.js"></script>

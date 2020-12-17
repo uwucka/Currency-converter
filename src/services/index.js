@@ -7,11 +7,9 @@ class Api {
 
   async currency() {
     const response = await fetch(this.url)
-        .then((res) => res.json())
-        .then((data) => data)
-        .catch((err) => Promise.reject(err))
+    const data = await response.json()
 
-    return response
+    return data
   }
 }
 
