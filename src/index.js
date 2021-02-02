@@ -11,15 +11,15 @@ document.addEventListener('DOMContentLoaded', () => {
     await store.init()
 
     mc.rates = {
-      AUD: 1.58, // 1 EUR === 1.58 AUD
+      AUD: 1.58, // 1.40 EUR === 1.58 AUD
       RUB: 92.131,
       USD: 1.21,
-      EUR: 1,
+      EUR: 1.40,
     }
 
-    mc.main = 'RUB'
+    mc.base = 'RUB'
 
-    console.log(mc.convert(1000, 'RUB', 'USD'))
+    console.log('mc', mc.convert(1000, 'AUD', 'RUB'))
 
     form.renderDate(store.date)
     form.renderSelectFrom(store.data)

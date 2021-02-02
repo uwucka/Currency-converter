@@ -9,7 +9,7 @@
     "require-jsdoc": "off",
     "linebreak-style": ["error", "windows"],
     "semi": [2, "never"],
-    "max-len": [2, { "code": 90, "tabWidth": 2, "ignoreUrls": true }]
+    "max-len": [2, { "code": 120, "tabWidth": 2, "ignoreUrls": true }]
   },
   "extends": ["eslint:recommended", "google"]
 }
