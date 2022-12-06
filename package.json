@@ -1,15 +1,10 @@
 {
-  "name": "converter",
+  "name": "moneyconverter",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "serve": "esbuild src/index.js --outfile=dist/index.js --bundle --serve",
-    "build": "esbuild src/index.js --outfile=dist/index.js --bundle"
-  },
+  "description": "Simple currency conversion library",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sech0/converter.git"
+    "url": "git+https://github.com/uwucka/moneyconverter.git"
   },
   "keywords": [
     "js",
@@ -18,21 +13,9 @@
     "converter",
     "currency"
   ],
-  "author": "sech0",
+  "author": "uwucka",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sech0/converter/issues"
-  },
-  "homepage": "https://github.com/sech0/converter#readme",
-  "browserslist": "> 0.25%, not dead",
-  "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-loader": "^3.0.3",
-    "jest": "^26.6.3"
-  },
-  "dependencies": {
-    "esbuild": "^0.8.23"
+    "url": "https://github.com/uwucka/moneyconverter/issues"
   }
 }
